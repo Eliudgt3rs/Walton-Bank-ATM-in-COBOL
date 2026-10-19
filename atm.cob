@@ -1,14 +1,14 @@
       ******************************************************************
-      * Author: Eliud Waititu                                          *
-      * Program Name: Simple ATM Simulation                            *
-      * Description: A console-based ATM program implementing secure   *
-      *              PIN authentication (3 attempts), account balance  *
-      *              management, deposits, and withdrawals with robust *
-      *              input validation and formatted currency display.  *
+      * Author: Expert COBOL Architect                                 *
+      * Program Name: WALTON BANK ATM Simulation                        *
+      * Description: A console-based ATM program for Walton Bank        *
+      *              implementing secure PIN authentication (3 attempts),*
+      *              account balance management, deposits, and         *
+      *              withdrawals with robust input validation.         *
       * Compiler: GnuCOBOL (ANSI COBOL 85 Standard)                    *
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. SIMPLE-ATM.
+       PROGRAM-ID. WALTON-BANK-ATM.
 
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
@@ -49,7 +49,7 @@
            ELSE
                DISPLAY "========================================"
                DISPLAY " ACCOUNT LOCKED: 3 failed attempts.     "
-               DISPLAY " Please contact your bank.              "
+               DISPLAY " Please contact Walton Bank support.    "
                DISPLAY "========================================"
            END-IF
            STOP RUN.
@@ -85,7 +85,7 @@
            PERFORM UNTIL WS-MENU-CHOICE = '4'
                DISPLAY " "
                DISPLAY "========================================"
-               DISPLAY "               ATM MENU                 "
+               DISPLAY "            WALTON BANK ATM             "
                DISPLAY "========================================"
                DISPLAY "[1] Check Balance"
                DISPLAY "[2] Deposit Funds"

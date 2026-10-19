@@ -1,0 +1,16 @@
+# Compiled binaries
+*.exe
+*.dll
+*.so
+*.o
+*.obj
+
+# GnuCOBOL temporary/listing files
+*.lst
+*.int
+*.gnt
+*.idy
+
+# OS generated files
+.DS_Store
+Thumbs.db
