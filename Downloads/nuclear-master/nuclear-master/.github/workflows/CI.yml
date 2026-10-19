@@ -62,6 +62,8 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm test
+      - name: Run Test Coverage Gate
+        run: npm run coverage
 
   build:
     runs-on: ${{ matrix.platform.os }}

@@ -46,8 +46,22 @@ Please include the following with each issue:
 
 ## Contributing Code
 
-If you are interested in writing code to fix issues or add features, 
-please see How to [Contribute](https://nukeop.gitbook.io/nuclear/contributing/contribution-guidelines) in the docs.
+If you are interested in writing code to fix issues or add features, please follow these guidelines:
+
+### Branch Naming Conventions
+- Feature branches: `feature/<short-description>`
+- Bug fix branches: `fix/<short-description>`
+- Refactoring branches: `refactor/<short-description>`
+
+### Pull Request (PR) Guidelines
+- Keep PRs focused on a single concern.
+- Ensure all tests pass (`npm test`) and typechecks succeed (`npm run typecheck`).
+- Include unit tests for any new features or bug fixes.
+- Adhere to project linting and coding style (`npm run lint`).
+
+### Testing & Coverage Requirements
+- All new code must be accompanied by corresponding unit or integration tests.
+- Maintain or exceed the global test coverage threshold (minimum 50% line coverage enforced in CI via Jest and coverage gating).
 
 We also appreciate [converting existing JS code to Typescript](https://nukeop.gitbook.io/nuclear/contributing/converting-to-typescript), and raising test coverage.
 
